@@ -1,0 +1,282 @@
+{
+  "seed": 42,
+  "positive_label": 1,
+  "positive_class": "AI",
+  "selection_metric": "val_f1",
+  "vectorizer": {
+    "ngram_range": [
+      1,
+      2
+    ],
+    "max_features": 50000,
+    "sublinear_tf": true,
+    "min_df": 2
+  },
+  "c_grid": [
+    0.1,
+    1.0,
+    10.0
+  ],
+  "calibration_folds": 5,
+  "n_train": 14000,
+  "n_val": 3000,
+  "n_test": 3000,
+  "best_model": "linear_svc",
+  "best_C": 10.0,
+  "validation": {
+    "accuracy": 0.9956666666666667,
+    "precision": 0.9953364423717521,
+    "recall": 0.996,
+    "f1": 0.9956681106297901,
+    "roc_auc": 0.9989884444444445
+  },
+  "candidates": [
+    {
+      "model": "logistic_regression",
+      "C": 0.1,
+      "fit_seconds": 16.22,
+      "val_accuracy": 0.9743333333333334,
+      "val_precision": 0.9850034083162917,
+      "val_recall": 0.9633333333333334,
+      "val_f1": 0.9740478597910347,
+      "val_roc_auc": 0.9962426666666666
+    },
+    {
+      "model": "linear_svc",
+      "C": 0.1,
+      "fit_seconds": 17.89,
+      "val_accuracy": 0.9913333333333333,
+      "val_precision": 0.9913333333333333,
+      "val_recall": 0.9913333333333333,
+      "val_f1": 0.9913333333333333,
+      "val_roc_auc": 0.9984733333333333
+    },
+    {
+      "model": "logistic_regression",
+      "C": 1.0,
+      "fit_seconds": 17.84,
+      "val_accuracy": 0.989,
+      "val_precision": 0.9926124916051041,
+      "val_recall": 0.9853333333333333,
+      "val_f1": 0.9889595182335229,
+      "val_roc_auc": 0.9983115555555555
+    },
+    {
+      "model": "linear_svc",
+      "C": 1.0,
+      "fit_seconds": 19.6,
+      "val_accuracy": 0.995,
+      "val_precision": 0.9953302201467645,
+      "val_recall": 0.9946666666666667,
+      "val_f1": 0.9949983327775925,
+      "val_roc_auc": 0.998948
+    },
+    {
+      "model": "logistic_regression",
+      "C": 10.0,
+      "fit_seconds": 21.45,
+      "val_accuracy": 0.9936666666666667,
+      "val_precision": 0.9953177257525083,
+      "val_recall": 0.992,
+      "val_f1": 0.9936560934891486,
+      "val_roc_auc": 0.9988511111111111
+    },
+    {
+      "model": "linear_svc",
+      "C": 10.0,
+      "fit_seconds": 23.46,
+      "val_accuracy": 0.9956666666666667,
+      "val_precision": 0.9953364423717521,
+      "val_recall": 0.996,
+      "val_f1": 0.9956681106297901,
+      "val_roc_auc": 0.9989884444444445
+    }
+  ],
+  "test": {
+    "accuracy": 0.9953333333333333,
+    "precision": 0.9959946595460614,
+    "recall": 0.9946666666666667,
+    "f1": 0.9953302201467645,
+    "roc_auc": 0.9996853333333333,
+    "confusion_matrix": [
+      [
+        1494,
+        6
+      ],
+      [
+        8,
+        1492
+      ]
+    ],
+    "labels": [
+      "human",
+      "ai"
+    ]
+  },
+  "top_features": {
+    "human": [
+      {
+        "feature": "because",
+        "weight": -3.379276
+      },
+      {
+        "feature": "would",
+        "weight": -2.070072
+      },
+      {
+        "feature": "people",
+        "weight": -1.546514
+      },
+      {
+        "feature": "very",
+        "weight": -1.526611
+      },
+      {
+        "feature": "many",
+        "weight": -1.448573
+      },
+      {
+        "feature": "schools",
+        "weight": -1.425562
+      },
+      {
+        "feature": "car",
+        "weight": -1.371825
+      },
+      {
+        "feature": "the students",
+        "weight": -1.365796
+      },
+      {
+        "feature": "venus",
+        "weight": -1.340555
+      },
+      {
+        "feature": "that is",
+        "weight": -1.329993
+      },
+      {
+        "feature": "the people",
+        "weight": -1.320078
+      },
+      {
+        "feature": "kids",
+        "weight": -1.277213
+      },
+      {
+        "feature": "will",
+        "weight": -1.271352
+      },
+      {
+        "feature": "although",
+        "weight": -1.219073
+      },
+      {
+        "feature": "then",
+        "weight": -1.202156
+      },
+      {
+        "feature": "going",
+        "weight": -1.172355
+      },
+      {
+        "feature": "student_name",
+        "weight": -1.150639
+      },
+      {
+        "feature": "student",
+        "weight": -1.127175
+      },
+      {
+        "feature": "percent",
+        "weight": -1.116964
+      },
+      {
+        "feature": "driving",
+        "weight": -1.112874
+      }
+    ],
+    "ai": [
+      {
+        "feature": "it like",
+        "weight": 1.642731
+      },
+      {
+        "feature": "important",
+        "weight": 1.515589
+      },
+      {
+        "feature": "important to",
+        "weight": 1.48769
+      },
+      {
+        "feature": "additionally",
+        "weight": 1.487562
+      },
+      {
+        "feature": "in conclusion",
+        "weight": 1.357334
+      },
+      {
+        "feature": "super",
+        "weight": 1.345965
+      },
+      {
+        "feature": "it important",
+        "weight": 1.318054
+      },
+      {
+        "feature": "essay",
+        "weight": 1.289893
+      },
+      {
+        "feature": "conclusion",
+        "weight": 1.270917
+      },
+      {
+        "feature": "potential",
+        "weight": 1.260653
+      },
+      {
+        "feature": "believe that",
+        "weight": 1.192693
+      },
+      {
+        "feature": "it not",
+        "weight": 1.135695
+      },
+      {
+        "feature": "example if",
+        "weight": 1.133889
+      },
+      {
+        "feature": "think it",
+        "weight": 1.106932
+      },
+      {
+        "feature": "unique",
+        "weight": 1.083055
+      },
+      {
+        "feature": "and",
+        "weight": 1.072155
+      },
+      {
+        "feature": "however",
+        "weight": 1.053376
+      },
+      {
+        "feature": "provide",
+        "weight": 1.018626
+      },
+      {
+        "feature": "re",
+        "weight": 1.011342
+      },
+      {
+        "feature": "us learn",
+        "weight": 1.009005
+      }
+    ]
+  }
+}

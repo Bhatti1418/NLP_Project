@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+
+# Local datasets and trained weights stay off git.
+# .gitkeep files are kept so the empty directories remain in the repo.
+data/raw/*
+!data/raw/.gitkeep
+models/*
+!models/.gitkeep
